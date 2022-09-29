@@ -1,5 +1,4 @@
 import Footer from "../common/Footer";
-import head from "../images/head.png";
 import standing from "../images/standing.png";
 import ProjectsList from "./ProjectsList";
 import home from "./home.css"
@@ -18,6 +17,7 @@ export default function Home(){
                         <div className="col-3">
                             <img
                                 src={standing}
+                                alt="icon of black girl with dreads standing wearing yellow pants and blue jacket"
                                 style={{width: 70, paddingTop: 0}}>
                             </img>
                         </div>
