@@ -23,7 +23,7 @@ export default function Home(){
                         </div>
                     </div>
 
-                    <p className="p-md-2 p-4" style={{fontFamily: "Nunito, sans-serif"}}>
+                    <p className="p-md-2 p-4 mb-0 pb-0" style={{fontFamily: "Nunito, sans-serif"}}>
                         Thanks for stumbling on my page! My name is Denasia. I am 22 years young. I love everything Star Wars and Japan. Making the career switch from ASL interpreter to software engineer has been the best decision I've made in a long time! Currently, I'm enrolled in Thinkful's immersion boot camp. Tech has always had a special place in my heart and brain but it wasn't the career choice I initially followed, unfortunately. But now I'm here and ready to take it head-on! I'm always up for a challenge to pick at my brain and make me think. I am super excited to build and connect with colleagues and mentors and develop new skills to put to the test!
                     </p>
                 </div>
