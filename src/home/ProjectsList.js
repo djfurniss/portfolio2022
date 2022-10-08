@@ -35,7 +35,7 @@ export default function ProjectsList() {
               <p>This application features three unique methods of encrypting and decrypting messages. I was responsible for implementing functional JavaScript operations using efficient, readable, and DRY code.
               <a href="https://github.com/djfurniss/decoder-ring">Take a look at my code </a>
               or 
-              <a href="https://decoder-ring-nine.vercel.app/"> check out the site itself!</a>
+              <a href="https://decoder-ring-nine.vercel.app/"> the site itself!</a>
               </p>
             </div>
           </div>
@@ -61,15 +61,14 @@ export default function ProjectsList() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <p>I developed a RESTful API and set up a PostgreSQL database to support an already build user interface for a movie site. Click 
-                <a href="https://we-love-movies-client-2000.herokuapp.com/"> here </a>
-                to see the user interface or 
-                <a href="https://github.com/djfurniss/we-love-movies"> here </a>
-                to view my code!
+              <p>I developed a RESTful API and set up a PostgreSQL database to support an already build user interface for a movie site. 
+                <a href="https://we-love-movies-client-2000.herokuapp.com/"> View the site </a> or 
+                <a href="https://github.com/djfurniss/we-love-movies"> take a peek at my code </a> !
               </p>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button
@@ -93,13 +92,13 @@ export default function ProjectsList() {
               <p>This project focused on using complex CSS styling, styling HTML forms and their inputs, and media queries to make a responsive site. While it has no functionality, feel free to 
                 <a href="https://djfurniss.github.io/thinkfulbnb/"> take a look at the page </a>
                 or 
-                <a href="https://github.com/djfurniss/thinkfulbnb"> have a look at my code!</a>
+                <a href="https://github.com/djfurniss/thinkfulbnb"> my code!</a>
               </p>
             </div>
           </div>
         </div>
 
-        {/* <div class="accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button
               class="accordion-button collapsed"
@@ -120,11 +119,44 @@ export default function ProjectsList() {
           >
             <div class="accordion-body">
               <p>
-                <a href="https://shrouded-sea-23146.herokuapp.com/dishes">heroku</a>
+                This project helps restaurants keep track of their customer's orders. Implementing a CRUD design, customers can add, delete, or update orders. Verification middleware makes sure customers cannot edit an order that has already been delivered or is in the process of being deliered. 
+                <a href="https://shrouded-sea-23146.herokuapp.com/dishes">Take a look at the API</a>! The front end will be deployed soon!
+                <a href="https://github.com/djfurniss/grub-dash"> Here's the repository </a>that has the docs on how this API functions.
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Library Project
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                I built a functioning server for a local library's front end application to make API calls. I implemented a RESTful API.
+                <a href="https://local-library-seven.vercel.app/"> Take a look and the site </a>
+                or 
+                <a href="https://github.com/djfurniss/local-library-project"> view my code</a> !
+        
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
