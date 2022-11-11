@@ -1,0 +1,23 @@
+#Projects{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    /* align-items: center;
+    justify-content: center; */
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.scroll{
+    overflow: scroll;
+}
+
+#Projects #main-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(100px - 2vw);
+    height: 90vh;
+}

@@ -1,0 +1,25 @@
+#Project{
+    display: flex;
+    flex-direction: column;
+    background-color: #B7B7A4;
+    padding: 30px;
+    border-radius: 1vw;
+    margin: 10px;
+    width: calc(200px + 8vw);
+    height: 350px;
+}
+#Project #stack{
+    font-style: italic;
+}
+#Project #description{
+    height: auto;
+    overflow:scroll;
+}
+#Project a{
+    text-decoration: none;
+    color: #3A3D31;
+    margin-right: 20px;
+}
+#Project a:hover{
+    text-decoration: underline;
+}
