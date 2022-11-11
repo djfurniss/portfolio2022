@@ -1,9 +1,15 @@
 #About{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    align-items: center;
+    justify-content: center;
     height: 90vh;
 }
 #About .scroll{
     overflow: scroll;
+}
+#About #main{
+    margin-top: calc(100px - 2vw);
+    padding-left: 15vw;
+    padding-right: 15vw;
 }

@@ -5,14 +5,14 @@ import "./welcome.css";
 
 export default function Welcome(){
     const navigate = useNavigate();
-    
+
     return(
         <div id="Welcome">
             <div id="info">
                 <div id="name-image-container">
                     <div id="name-container">
-                        <h1>Denasia</h1>
-                        <h1>Furniss</h1>
+                        <h1>DENASIA</h1>
+                        <h1>FURNISS</h1>
                     </div>
                     <img
                         src={standing}
@@ -24,9 +24,9 @@ export default function Welcome(){
             </div>
 
             <div id="link-container">
-                <a onClick={()=>navigate("/about")}>about me</a>
-                <a onClick={()=>navigate("/projects")}>my projects</a>
-                <a onClick={()=>navigate("/connect")}>connect with me</a>
+                <a onClick={()=>navigate("/about")} href>about me</a>
+                <a onClick={()=>navigate("/projects")} href>my projects</a>
+                <a onClick={()=>navigate("/connect")} href>connect with me</a>
             </div>
         </div>
     )
