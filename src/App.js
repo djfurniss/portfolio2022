@@ -5,7 +5,7 @@ import Home from "./home/Home";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
         </Routes>

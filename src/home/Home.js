@@ -6,15 +6,15 @@ import home from "./home.css"
 export default function Home(){
     return(
         <>
-            <div className="row" style={{fontFamily: "Nunito, sans-serif"}}>
-                <div className="my-3 text-center col-md-7 col-12">
-                    <div className="d-flex align-items-stretch">
-                        <div className="col-8 d-flex flex-column justify-content-evenly">
-                            <h1 className="fw-bold" style={{color: "#FF7B9C"}}>Denasia Furniss</h1>
-                            <h2 className="fs-5 fw-normal">Full Stack Software Engineer</h2>
-                            <p className="text-secondary text-opacity-75 fw-light">Charlotte, NC</p>
+            <div style={{fontFamily: "Nunito, sans-serif"}}>
+                <div>
+                    <div>
+                        <div>
+                            <h1 style={{color: "#FF7B9C"}}>Denasia Furniss</h1>
+                            <h2>Full Stack Software Engineer</h2>
+                            <p>Charlotte, NC</p>
                         </div>
-                        <div className="col-3">
+                        <div>
                             <img
                                 src={standing}
                                 alt="icon of black girl with dreads standing wearing yellow pants and blue jacket"
@@ -40,7 +40,7 @@ export default function Home(){
                     </div>
                 </div>
 
-                <div className="col px-5">
+                <div>
                     <ProjectsList/>
                     <Footer/>
                 </div>
