@@ -1,44 +1,47 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import linkedin from "../images/linkedin-logo.png";
 import github from "../images/github-logo.png";
 import instagram from "../images/instagram-logo.png";
 
-export default function Footer () {
-    return (
-        <>
-            <div className="row pt-4">
-                    <p className="col text-center mb-0">Connect With Me!</p>
-            </div>
-            <div className="d-flex justify-content-center pb-4">
+import "./connect.css"
+import HomeButtom from "../common/HomeButton";
+
+export default function Connect(){
+    const navigate = useNavigate();
+
+    return(
+        <div id="Connect">
+            <HomeButtom/>
+            <h1>Connect With Me!</h1>
+            <div id="link-container">
                <a 
                 href="https://www.linkedin.com/in/denasia-furniss/" 
-                target="blank"
-                className="px-2">
+                target="blank">
                     <img 
                         src={linkedin} 
                         style={{width: 20}}>
-                    </img>
+                    </img> LinkedIn
                 </a> 
 
                <a 
                 href="https://github.com/djfurniss" 
-                target="blank"
-                className="px-2">
+                target="blank">
                     <img 
                         src={github} 
                         style={{width: 20}}>
-                    </img>
+                    </img> GitHub
                 </a> 
 
                <a 
                 href="https://instagram.com/djaliece?igshid=ODBkMDk1MTU=" 
-                target="blank"
-                className="px-2">
+                target="blank">
                     <img 
                         src={instagram} 
                         style={{width: 20}}>
-                    </img>
+                    </img> Instagram
                 </a>
             </div>
-        </>
+        </div>
     )
 };

@@ -1,0 +1,9 @@
+#About{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 90vh;
+}
+#About .scroll{
+    overflow: scroll;
+}
