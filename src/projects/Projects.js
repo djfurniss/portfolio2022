@@ -35,9 +35,11 @@ export default function Projects(){
                     name="GrubDash" 
                     description={desc.grubDash}
                     repo="https://github.com/djfurniss/grub-dash"/>
-                {/* <Project 
-                    name="Weatherzen" 
-                    description="description"/> */}
+                <Project 
+                    name="Flashcard-o-matic"
+                    stack="React, Bootstrap" 
+                    description={desc.flashcardOMatic}
+                    repo="https://github.com/djfurniss/flashcard-o-matic"/>
             </div>
         </div>
     )
