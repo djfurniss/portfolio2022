@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { AiOutlineHome } from 'react-icons/ai'
-
-// TODO: use an icon
+import { AiOutlineHome } from 'react-icons/ai';
 
 export default function HomeButtom(){
     const navigate = useNavigate();
