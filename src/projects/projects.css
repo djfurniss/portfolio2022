@@ -6,12 +6,9 @@
     justify-content: center; */
     padding-left: 5vw;
     padding-right: 5vw;
-}
-
-.scroll{
+    margin-bottom: 20px;
     overflow: scroll;
 }
-
 #Projects #main-container{
     display: inline-flex;
     flex-wrap: wrap;
@@ -20,4 +17,5 @@
     justify-content: center;
     margin-top: calc(100px - 2vw);
     height: 90vh;
+    overflow: scroll;
 }
