@@ -3,7 +3,10 @@ import "./project.css";
 
 export default function Project({ name, stack, description, repo, link }) {
 
-  useEffect(()=>{
+  useEffect(manageDescriptions, [])
+  document.body.onresize = ()=> manageDescriptions()
+
+  function manageDescriptions(){
     document.querySelectorAll("#description").forEach((elem=>{
       elem.expanded = false; // kind of like state but for this specific element and not each #description
       if (elem.clientHeight > 150){
@@ -30,7 +33,7 @@ export default function Project({ name, stack, description, repo, link }) {
         elem.parentElement.insertBefore(viewOpt, elem.parentElement.children[3])
       }
     }))
-  }, [window.innerWidth])
+  };
 
   return (
     <div id="Project" >
