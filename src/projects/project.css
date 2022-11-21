@@ -11,9 +11,13 @@
 #Project #stack{
     font-style: italic;
 }
-#Project #description{
-    height: auto;
-    overflow:scroll;
+#Project .view-opt{
+    font-size: smaller;
+    text-align: center;
+    color: #00000050
+}
+#Project h2{
+    margin-bottom: 0px;
 }
 #Project a{
     text-decoration: none;
