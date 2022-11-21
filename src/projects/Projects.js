@@ -33,6 +33,7 @@ export default function Projects(){
                     link="https://decoder-ring-nine.vercel.app/"/>
                 <Project 
                     name="GrubDash" 
+                    stack="JavaScript, RESTful API, PostgreSQL, DBeaver"
                     description={desc.grubDash}
                     repo="https://github.com/djfurniss/grub-dash"/>
                 <Project 
