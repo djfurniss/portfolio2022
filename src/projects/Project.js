@@ -30,7 +30,7 @@ export default function Project({ name, stack, description, repo, link }) {
         elem.parentElement.insertBefore(viewOpt, elem.parentElement.children[3])
       }
     }))
-  }, [])
+  }, [window.innerWidth])
 
   return (
     <div id="Project" >
