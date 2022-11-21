@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
 
 export default function Project({ name, stack, description, repo, link }) {
 
-  window.onload = () => {
+  useEffect(()=>{
     document.querySelectorAll("#description").forEach((elem=>{
       elem.expanded = false; // kind of like state but for this specific element and not each #description
       if (elem.clientHeight > 150){
@@ -14,6 +14,9 @@ export default function Project({ name, stack, description, repo, link }) {
         const viewOpt = document.createElement("p");
         viewOpt.innerText = "see more";
         viewOpt.setAttribute("class", "view-opt"); // for styling
+        viewOpt.onmouseover = (e) => {
+          e.target.style.cursor = "default"
+        };
         viewOpt.onclick = (e)=>{
           elem.expanded = !elem.expanded
           // what is left to be rendered is the total height subtracted by the height that's currently showing after applying hidden overflow
@@ -24,11 +27,10 @@ export default function Project({ name, stack, description, repo, link }) {
           e.target.innerText = elem.expanded ? "see less" : "see more"
         };
 
-        elem.parentElement.appendChild(viewOpt)
         elem.parentElement.insertBefore(viewOpt, elem.parentElement.children[3])
       }
     }))
-  }
+  }, [])
 
   return (
     <div id="Project" >
