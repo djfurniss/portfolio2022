@@ -1,13 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./project.css";
 
 export default function Project({ name, stack, description, repo, link }) {
 
   useEffect(manageDescriptions, [])
-  document.body.onresize = ()=> manageDescriptions()
+  document.body.onresize = ()=> {
+    // reset all description text boxes to default size
+    document.querySelectorAll("#description").forEach(elem => {
+      if (elem.totalHeight > 150 && elem.expanded){
+        elem.expanded = false;
+        elem.style.overflow = "hidden"
+        elem.style.marginBottom = "5px"
+
+        elem.parentElement.style.height = `360px`;
+        elem.parentElement.children[3].innerText = "see more"
+      }
+    })
+  }
 
   function manageDescriptions(){
-    document.querySelectorAll("#description").forEach((elem=>{
+    document.querySelectorAll("#description").forEach(elem=>{
       elem.expanded = false; // kind of like state but for this specific element and not each #description
       if (elem.clientHeight > 150){
         elem.totalHeight = elem.clientHeight; // keep track of the total height of the paragraph
@@ -32,7 +44,7 @@ export default function Project({ name, stack, description, repo, link }) {
 
         elem.parentElement.insertBefore(viewOpt, elem.parentElement.children[3])
       }
-    }))
+    })
   };
 
   return (
