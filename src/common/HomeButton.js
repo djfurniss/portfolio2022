@@ -18,7 +18,8 @@ export default function HomeButtom(){
                 width: '30px',
                 height: '30px',
                 border: '1px black solid',
-                borderRadius: '1vw'
+                borderRadius: '1vw',
+                cursor: 'pointer'
             }}>
                 <AiOutlineHome style={{color: 'black'}}/>
             </div>

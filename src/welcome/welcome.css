@@ -33,6 +33,7 @@
 }
 #Welcome a:hover{
     color: white;
+    cursor: pointer;
 }
 #Welcome a:active{
     color: #FFE8D6
