@@ -34,7 +34,7 @@ export default function Connect(){
                 </a> 
 
                <a 
-                href="https://instagram.com/djaliece?igshid=ODBkMDk1MTU=" 
+                href="https://instagram.com/dfurniss.dev" 
                 target="blank">
                     <img 
                         src={instagram} 
