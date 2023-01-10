@@ -25,7 +25,7 @@
     text-decoration: none;
 }
 
-@media all and (min-width: 700px){
+@media all and (min-width: 880px){
     #Connect #link-container{
         flex-direction: row;
     }

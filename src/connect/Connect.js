@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import linkedin from "../images/linkedin-logo.png";
 import github from "../images/github-logo.png";
 import instagram from "../images/instagram-logo.png";
+import twitter from "../images/twitter-logo.png"
 
 import "./connect.css"
 import HomeButtom from "../common/HomeButton";
@@ -40,6 +41,15 @@ export default function Connect(){
                         src={instagram} 
                         style={{width: 20}}>
                     </img> Instagram
+                </a>
+
+               <a 
+                href="https://twitter.com/dfurniss_dev" 
+                target="blank">
+                    <img 
+                        src={twitter} 
+                        style={{width: 30}}>
+                    </img> Twitter
                 </a>
             </div>
         </div>
