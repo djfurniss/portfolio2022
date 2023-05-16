@@ -10,7 +10,7 @@ export default function About(){
             <div className="scroll" id="main">
                 <h2>a little about me</h2>
                 <div>
-                    <p>Hello there! I am 22 year old Denasia. I was born and mostly raised in Mississippi but now reside in Charlotte, NC. I adore everything Star Wars and Japan. I love to rollerskate and spend time with family and friends. I absolutely love music. I was a band kid in high school, I played the clarinet, taught myself to play the flute and dabbled in other instruments. I ended up getting into color guard and did that during marching season and went back to my clarinet roots for concert season. I love languages. At the moment I'm learning Japanese and Spanish. Needless to say, I love learning new things, developing skills, and putting my brain to work!
+                    <p>Hello there! I am 22 year old Denasia. I was born and mostly raised in Mississippi. I've moved around a lot but now I am back in my home town. I adore everything Star Wars and Japan related. I love to rollerskate and spend time with family and friends. I absolutely love music. I was a band kid in high school, I played the clarinet, taught myself to play the flute and dabbled in other instruments. I ended up getting into color guard and did that during marching season and went back to my clarinet roots for concert season. I love languages. At the moment I'm learning Japanese and Spanish. Needless to say, I love learning new things, developing skills, and putting my brain to work!
                     </p>
                 </div>
                 <h2>my journey into tech</h2>
@@ -20,7 +20,7 @@ export default function About(){
                 </div>
                 <h2>education</h2>
                 <div>
-                    <p>I obtained my associates degree from Mississippi Gulf Coast Community College majoring in interpreting training technology, of course. I've just finished up Thinkful's Software Engineering immersion course. Woohoo! I'm determined to gain more certifications in the near future and maybe my bachelor's degree in computer science. 
+                    <p>I obtained my associates degree from Mississippi Gulf Coast Community College majoring in interpreting training technology, of course. I've also completed Thinkful's Software Engineering immersion course. I plan on getting my Bachelor's in computer science from WGU. I'm determined to also gain more certifications in the near future.
                     </p>
                 </div>
             </div>
