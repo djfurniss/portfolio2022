@@ -20,7 +20,7 @@ export default function Welcome(){
                     </img>
                 </div>
                 <h2>Full Stack Software Engineer</h2>
-                <p>Charlotte, NC</p>
+                <p>Moss Point, MS</p>
             </div>
 
             <div id="link-container">
