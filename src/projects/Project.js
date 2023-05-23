@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./project.css";
 
-export default function Project({ name, stack, description, repo, link }) {
-
+export default function Project({ proj: { name, stack, description, repo, link }}) {
   useEffect(manageDescriptions, [])
   document.body.onresize = ()=> {
     // reset all description text boxes to default size

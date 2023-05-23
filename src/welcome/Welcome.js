@@ -1,32 +1,104 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import standing from "../images/standing.png";
 import "./welcome.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 export default function Welcome(){
     const navigate = useNavigate();
+    const [transToAbt, setTransToAbt] = useState(false)
+    const [transToProj, setTransToProj] = useState(false)
+    const [transToConn, setTransToConn] = useState(false)
 
     return(
         <div id="Welcome">
             <div id="info">
                 <div id="name-image-container">
                     <div id="name-container">
-                        <h1>DENASIA</h1>
-                        <h1>FURNISS</h1>
+                        <motion.h1
+                            initial={{y: -300, opacity: 0}}
+                            animate={{y: 0, opacity: 1}}
+                            transition={{delay: .1}}>
+                                DENASIA
+                        </motion.h1>
+                        <motion.h1
+                            initial={{y: -300, opacity: 0}}
+                            animate={{y: 0, opacity: 1}}>
+                                FURNISS
+                        </motion.h1>
                     </div>
-                    <img
+
+                    <motion.img
+                        // drag
                         src={standing}
                         alt="icon of black girl with dreads standing wearing yellow pants and blue jacket">
-                    </img>
+                    </motion.img>
                 </div>
-                <h2>Full Stack Software Engineer</h2>
+
+                <h2>Frontend Software Engineer</h2>
                 <p>Moss Point, MS</p>
             </div>
 
             <div id="link-container">
-                <a onClick={()=>navigate("/about")} href>about me</a>
-                <a onClick={()=>navigate("/projects")} href>my projects</a>
-                <a onClick={()=>navigate("/connect")} href>connect with me</a>
+                <motion.a 
+                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
+                    animate={transToAbt ? 
+                        {scale: 40, 
+                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
+                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
+                        : {}
+                    }
+                    transition={{duration: .75}}
+                    onClick={()=>{
+                        setTransToAbt(!transToAbt)
+                        setTimeout(() => {
+                            navigate("/about")
+                        },500);
+                    }} 
+                    href>
+                        about me
+                </motion.a>
+                <motion.a 
+                    // whileHover={{scale: 1.1}}
+                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
+                    animate={transToProj ? 
+                        {scale: 40, 
+                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
+                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
+                        : {}
+                    }
+                    transition={{duration: .75}}
+                    onClick={()=>{
+                        setTransToProj(!transToProj)
+                        setTimeout(() => {
+                            navigate("/projects")
+                        },500);
+                    }} 
+                    href>
+                        my projects
+                </motion.a>
+
+                <motion.a 
+                    // whileHover={{scale: 1.1}}
+                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
+                    animate={transToConn ? 
+                        {scale: 40, 
+                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
+                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
+                        : {}
+                    }
+                    transition={{duration: .75}}
+                    onClick={()=>{
+                        setTransToConn(!transToConn)
+                        setTimeout(() => {
+                            navigate("/connect")
+                        },500);
+                    }} 
+                    href>
+                        connect with me
+                </motion.a>
+
             </div>
         </div>
     )

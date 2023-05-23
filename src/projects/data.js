@@ -1,0 +1,58 @@
+export default [
+    {
+        name: "PayBack",
+        stack: "JavaScript, React, CSS, MangoDB",
+        description: "Girl Develop It Hackathon 2022 award winning app for Most Creative. I had the privilege of working with seven extremely talented ladies during this event to develop an app where users can keep track of borrowed money as the lender or borrower.",
+        repo: "https://github.com/djfurniss/BORROW-APP",
+        // link: "",
+    },
+    {
+        name: "grouPlay",
+        stack: "React Native, Node.js, Express, PostgreSQL",
+        description: "This app is my favorite thing that I'm working on currently! It's designed to be a place where a group of friends can control their music together. When with friends, there's usually a descussion or argument about who is going to be responsible for playing music. Having a shared playlist and music player in one eliminates that problem.",
+        repo: "https://github.com/djfurniss/grouPlayApp",
+        // link: "",
+    },
+    {
+        name: "Restaurant Reservation",
+        stack: "React, Express, Node.js, PostgreSQL",
+        description: "This web app is designed for restaurant staff to organize their reservations.",
+        repo: "https://github.com/djfurniss/restaurant-reservation",
+        link: "https://restaurant-res-client.onrender.com/dashboard",
+    },
+    {
+        name: "Secret Message Encryption and Decryption",
+        // stack: "",
+        description: "This application features three unique methods of encrypting and decrypting messages. I was responsible for implementing functional JavaScript operations using efficient, readable, and DRY code.",
+        repo: "https://github.com/djfurniss/decoder-ring",
+        link: "https://decoder-ring-nine.vercel.app/",
+    },
+    {
+        name: "GrubDash",
+        stack: "JavaScript, RESTful API, PostgreSQL, DBeaver",
+        description: "This project helps restaurants keep track of their customer's orders. Implementing a CRUD design, customers can add, delete, or update orders. Verification middleware makes sure customers cannot edit an order that has already been delivered or is in the process of being deliered.",
+        repo: "https://github.com/djfurniss/grub-dash",
+        // link: "",
+    },
+    {
+        name: "Flashcard-o-matic",
+        stack: "JavaScript, React, Bootstrap",
+        description: "Flashcard-o-matic is designed to help students organize their study material using flashcards. With this app, you can create decks to keep topics and subjects in one place. You can then add cards to decks and study them. With a simple and easy to use UI, Flashcard-o-matic makes it easy to study with no distractions. This project was part of an assignment in Thinkful's software engineering immersion bootcamp. This project focused heavilly on my understanding of React including hooks like useState and useEffect.",
+        repo: "https://github.com/djfurniss/flashcard-o-matic",
+        // link: "",
+    },
+    {
+        name: "Library Records Application",
+        stack: "",
+        description: "I built a functioning server for a local library's front end application to make API calls. I implemented a RESTful API.",
+        repo: "https://github.com/djfurniss/local-library-project",
+        link: "https://local-library-seven.vercel.app/",
+    },
+    {
+        name: "Calculator",
+        stack: "HTML, CSS",
+        description: "Yes, it's a calculator! With HTML, DOM manipulation, and some modern styling this simple but handy project came to life. I made sure to develop functionality that typical calculators would have. You can trail and chain equations such as 3 + 5 - 8. After clicking =, you can continue an equation. There are two buttons, clear and backspace to allow for editing on the calculator's screen.",
+        repo: "https://github.com/djfurniss/calculator",
+        link: "https://calculator-s0kj.onrender.com",
+    },
+]
