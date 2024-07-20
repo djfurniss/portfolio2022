@@ -32,7 +32,7 @@ export default function Welcome(){
                     <motion.img
                         // drag
                         src={standing}
-                        alt="icon of black girl with dreads standing wearing yellow pants and blue jacket">
+                        alt="icon of brown toned girl standing with black mid lengths locs of hair pulled pack into a ponytail wearing a brown sweater vest on top of a white button down, a green bowtie, rolled up two-toned jeans, and green flat shoes">
                     </motion.img>
                 </div>
 
