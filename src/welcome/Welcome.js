@@ -1,16 +1,11 @@
 import React, { useState } from "react";
+import PageButton from "../common/PageButton";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import standing from "../images/standing.png";
 import "./welcome.css";
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 export default function Welcome(){
-    const navigate = useNavigate();
-    const [transToAbt, setTransToAbt] = useState(false)
-    const [transToProj, setTransToProj] = useState(false)
-    const [transToConn, setTransToConn] = useState(false)
-    
     const role = "Software Engineer"
     const location = "Moss Point, MS"
 
@@ -44,63 +39,9 @@ export default function Welcome(){
             </div>
 
             <div id="link-container">
-                <motion.a 
-                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
-                    animate={transToAbt ? 
-                        {scale: 40, 
-                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
-                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
-                        : {}
-                    }
-                    transition={{duration: .75}}
-                    onClick={()=>{
-                        setTransToAbt(!transToAbt)
-                        setTimeout(() => {
-                            navigate("/about")
-                        },500);
-                    }} 
-                    href>
-                        about me
-                </motion.a>
-                <motion.a 
-                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
-                    animate={transToProj ? 
-                        {scale: 40, 
-                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
-                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
-                        : {}
-                    }
-                    transition={{duration: .75}}
-                    onClick={()=>{
-                        setTransToProj(!transToProj)
-                        setTimeout(() => {
-                            navigate("/projects")
-                        },500);
-                    }} 
-                    href>
-                        my projects
-                </motion.a>
-
-                <motion.a 
-                    // whileHover={{scale: 1.1}}
-                    whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
-                    animate={transToConn ? 
-                        {scale: 40, 
-                        backgroundColor:  ["#DDBEA9", "#FFE8D6", "#FFE8D6" ],
-                        color: ["white", "#FFE8D6", "#FFE8D6"]} 
-                        : {}
-                    }
-                    transition={{duration: .75}}
-                    onClick={()=>{
-                        setTransToConn(!transToConn)
-                        setTimeout(() => {
-                            navigate("/connect")
-                        },500);
-                    }} 
-                    href>
-                        connect with me
-                </motion.a>
-
+                <PageButton buttonText={"about me"} pagePath={"/about"}/>
+                <PageButton buttonText={"my projects"} pagePath={"/projects"}/>
+                <PageButton buttonText={"connect with me"} pagePath={"/connect"}/>
             </div>
         </div>
     )
