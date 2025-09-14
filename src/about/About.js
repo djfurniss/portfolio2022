@@ -46,7 +46,7 @@ export default function About(){
                 >
                 <h2>education</h2>
                 <div>
-                    <p>I obtained my associates degree from Mississippi Gulf Coast Community College majoring in interpreting training technology, leading me to just a year long career of being an ASL interpreter. I've also completed Thinkful's Software Engineering immersion course. I'm determined to gain more certifications in the near future.
+                    <p>I obtained an Associates degree from Mississippi Gulf Coast Community College in Interpreting Training Technology, leading me to just a year long career of being an ASL interpreter. I also completed Thinkful's Software Engineering immersion course in 2022. I'm currently pursuing a Bachelor's in Computer Science at Western Governers University and am determined to gain more certifications along the way.
                     </p>
                 </div> 
                 </motion.div>
