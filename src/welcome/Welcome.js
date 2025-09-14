@@ -10,6 +10,9 @@ export default function Welcome(){
     const [transToAbt, setTransToAbt] = useState(false)
     const [transToProj, setTransToProj] = useState(false)
     const [transToConn, setTransToConn] = useState(false)
+    
+    const role = "Software Engineer"
+    const location = "Moss Point, MS"
 
     return(
         <div id="Welcome">
@@ -36,8 +39,8 @@ export default function Welcome(){
                     </motion.img>
                 </div>
 
-                <h2>Software Engineer</h2>
-                <p>Moss Point, MS</p>
+                <h2>{role}</h2>
+                <p>{location}</p>
             </div>
 
             <div id="link-container">
@@ -60,7 +63,6 @@ export default function Welcome(){
                         about me
                 </motion.a>
                 <motion.a 
-                    // whileHover={{scale: 1.1}}
                     whileHover={{rotate: [0, 1, 0, -1, 0], transition:{duration: .25, repeat: Infinity}}}
                     animate={transToProj ? 
                         {scale: 40, 
