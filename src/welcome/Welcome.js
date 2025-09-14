@@ -36,7 +36,7 @@ export default function Welcome(){
                     </motion.img>
                 </div>
 
-                <h2>Frontend Software Engineer</h2>
+                <h2>Software Engineer</h2>
                 <p>Moss Point, MS</p>
             </div>
 
